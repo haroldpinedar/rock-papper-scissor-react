@@ -14,8 +14,8 @@ const ButtonStyled = styled.div`
   letter-spacing: 2.5px;
 `;
 
-function Button() {
-  return <ButtonStyled>Rules</ButtonStyled>;
+function Button({ ...props }) {
+  return <ButtonStyled {...props}>Rules</ButtonStyled>;
 }
 
 export default Button;
